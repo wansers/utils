@@ -14,5 +14,5 @@
 /coverage
 
 # ide
-/.vscode
-/.idea
+.vscode
+.idea
