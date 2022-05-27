@@ -1,6 +1,7 @@
 {
   "name": "@ws/utils",
   "version": "1.0.0",
+  "private": false,
   "description": "some common function",
   "main": "./cjs/index.js",
   "module": "./es/index.js",
