@@ -8,6 +8,10 @@
   "typings": "./es/index.d.ts",
   "author": "wanshengqiang <wan624773262@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wansers/utils.git"
+  },
   "keywords": [
     "ts",
     "ua"
