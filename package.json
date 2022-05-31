@@ -1,6 +1,6 @@
 {
   "name": "@wansers/utils",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": false,
   "description": "some common function",
   "main": "lib/cjs/index.js",
