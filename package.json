@@ -1,13 +1,13 @@
 {
   "name": "@wansers/utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "description": "some common function",
-  "main": "./cjs/index.js",
-  "module": "./es/index.min.js",
-  "browser": "./umd/index.min.js",
-  "types": "./es/index.d.ts",
-  "typings": "./es/index.d.ts",
+  "main": "lib/cjs/index.js",
+  "module": "lib/es/index.min.js",
+  "browser": "lib/umd/index.min.js",
+  "types": "llib/es/index.d.ts",
+  "typings": "lib/es/index.d.ts",
   "author": "wanshengqiang <wan624773262@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -19,15 +19,12 @@
     "ua"
   ],
   "files": [
-    "lib/cjs",
-    "lib/es",
-    "lib/umd"
+    "lib",
   ],
   "scripts": {
     "clean": "rimraf lib",
     "rollup": "rollup -c",
-    "postpublish": "node scripts/postpublish.js",
-    "build": "pnpm run clean && pnpm run rollup && pnpm run postpublish"
+    "build": "pnpm run clean && pnpm run rollup"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",

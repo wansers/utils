@@ -9,7 +9,7 @@ import json from '@rollup/plugin-json';
 
 import pkg from './package.json'
 
-const outDir = path.join(__dirname, 'lib');
+const outDir = path.join(__dirname, '');
 const external = id => id.includes('@babel/runtime');
 
 const getBabeloptions = () => {
