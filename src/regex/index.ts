@@ -9,10 +9,10 @@ const regexMap: RegExpMap = {
 
 const regex = (reg: RegExp, value: string): boolean => reg.test(value);
 
-const isDigit = (value: string): boolean => regex(regexMap.digit, value);
-const isInteger = (value: string): boolean => regex(regexMap.integer, value);
-const isDecimal = (value: string): boolean => regex(regexMap.decimal, value);
-const isPhoneNum = (value: string): boolean => regex(regexMap.phone, value);
+const isDigit = (value: string | number): boolean => regex(regexMap.digit, String(value));
+const isInteger = (value: string | number): boolean => regex(regexMap.integer, String(value));
+const isDecimal = (value: string | number): boolean => regex(regexMap.decimal, String(value));
+const isPhoneNum = (value: string | number): boolean => regex(regexMap.phone, String(value));
 
 export {
   isDigit,
