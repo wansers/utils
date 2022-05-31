@@ -19,7 +19,7 @@
     "ua"
   ],
   "files": [
-    "lib"
+    "lib/"
   ],
   "scripts": {
     "clean": "rimraf lib",
