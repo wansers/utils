@@ -2,11 +2,13 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "declaration": true,
+    "moduleResolution": "node",
+    "module": "ESNext",
+    "declaration": false,
+    "target": "ES5",
     "sourceMap": true,
     "strict": true,
-    "moduleResolution": "node",
-    "target": "ES6"
+    "lib": ["ES6", "dom"]
   },
   "include": [
     "./src/**/*"
