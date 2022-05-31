@@ -1,8 +1,5 @@
-interface UAMap {
-  [key: string]: RegExp
-}
-
-const uaMap: UAMap = {
+import type { RegExpMap } from '../common';
+const uaMap: RegExpMap = {
   Windows: /Windows/,
   MacOS: /Macintosh/,
   Mobile: /Mobi|iPh|480/,
@@ -37,21 +34,6 @@ const isIPhoneX = () => {
   return false;
 }
 
-const test = (a?: string) => {
-  const b = a ?? 'test';
-  return b;
-}
-
-const testPromise = (a?: string): Promise<string> => {
-  return new Promise<string>((resolve, reject) => {
-    if (!a) {
-      resolve('has a');
-    } else {
-      reject();
-    }
-  })
-}
-
 export {
   isWindows,
   isMacOs,
@@ -61,6 +43,4 @@ export {
   isIPad,
   isIPhone,
   isIPhoneX,
-  test,
-  testPromise,
 }

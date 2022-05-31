@@ -1,6 +1,6 @@
 {
   "name": "@wansers/utils",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": false,
   "description": "some common function",
   "main": "lib/cjs/index.js",
@@ -16,7 +16,8 @@
   },
   "keywords": [
     "ts",
-    "ua"
+    "common functions",
+    "userAgent"
   ],
   "files": [
     "lib"
