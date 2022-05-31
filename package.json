@@ -1,6 +1,6 @@
 {
   "name": "@wansers/utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "description": "some common function",
   "main": "./cjs/index.js",
@@ -19,7 +19,9 @@
     "ua"
   ],
   "files": [
-    "lib/"
+    "lib/cjs",
+    "lib/es",
+    "lib/umd"
   ],
   "scripts": {
     "clean": "rimraf lib",
